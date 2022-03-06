@@ -1,0 +1,67 @@
+/* Styles pour la calculatrice */
+
+.clt {
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    border-radius: 18px;
+    background-color: var(--seco);
+    transform: translate(-50%, -50%);
+}
+
+.clt * {
+    margin: 5px;
+    color: var(--main);
+}
+
+.clt h2 {text-align: center;}
+
+.clt #close {
+    top: 0;
+    right: 0;
+    margin: 0;
+    box-shadow: none;
+    position: absolute;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 0;
+}
+
+.clt input, .clt #smt, .clt p {
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1px solid var(--main);
+    background-color: transparent;
+
+    transition: background-color color;
+    transition-duration: 0.4s;
+}
+
+.clt input:hover, .clt #smt:hover {
+    color: var(--seco);
+    background-color: var(--main);
+}
+
+.clt p {text-align: center;}
+
+.clt .btns {
+    display: grid; /* Mise en forme de grille pour les boutons */
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.clt .btns button {font-size: large;}
+
+/* Boutons spéciaux (couleur, taille) */
+
+.clt .btns .op, .clt .btns .del {color: red;}
+
+.clt .btns .sub {
+    color: green;
+    grid-column: 3 / -1;
+}
+
+.clt .btns .del {grid-column: 3 / -1;}

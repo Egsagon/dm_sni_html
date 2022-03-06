@@ -1,0 +1,42 @@
+/* ===== Styles pour le diaporama ===== */
+
+.slides {
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    border-radius: 18px;
+    background-color: var(--seco);
+    transform: translate(-50%, -50%);
+}
+
+.slides h2 {color: var(--main);} /* titre */
+
+.slides .img { /* image */
+    width: 60vw;
+    height: 60vh;
+    margin: 10px;
+    border-radius: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slides .cmds { /* commandes */
+    padding: 10px;
+    border-radius: 12px;
+    /*background-color: var(--main);*/
+    border: 1px solid var(--main);
+}
+
+.slides #close { /* bouton pour fermer */
+    top: 0;
+    right: 0;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 8px;
+    position: absolute;
+    border-top-left-radius: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 0;
+}
