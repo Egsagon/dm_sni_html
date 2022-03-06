@@ -33,7 +33,7 @@
     border-radius: 0;
     margin: 0 !important;
     padding: 0 !important;
-    width: calc(100%/3 - 2.5px); /* -2,5px pour le slider */
+    width: calc(100%/3 - 5px); /* -2,5px pour le slider */
     border-left: 0px !important;
     border-right: 0px !important;
     border-top: 1px solid var(--main);
